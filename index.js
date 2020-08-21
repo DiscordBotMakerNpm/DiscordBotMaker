@@ -58,7 +58,14 @@ exports.ajuda = function(string) {
   const command = args.shift().toLowerCase();
 
 if(command === "ajuda") {
-   message.reply("test")
+   const embed = new Discord.MessageEmbed()
+    .setTitle("Bem vindo ao centro de comandos!")
+    .setColor(Math.random(1* 1000))
+    .setDescription(`
+    ${string.replace(/\s/g, "")}ping
+    `)
+    .setFooter("Está package tem apenas 1 comando!")
+   message.reply(embed)
 };
 })
 }
