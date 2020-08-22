@@ -16,6 +16,15 @@ client.login("token");
 client.ping("prefix");
 ```
 
+# Added:
+`<client>.presence.<type: playing/watching/listening>("someting...")`
+`<client>.ajuda("prefix")`
+
+# Fixed: 
+`<client>.say("prefix")`
+
+# What we need to fix:
+`<client>.status("online/idle/dnd");
 
 
 # ⚠️ Warning ⚠️
